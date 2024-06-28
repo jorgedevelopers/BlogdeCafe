@@ -1,0 +1,288 @@
+html {
+
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /** 1rem = 10px **/
+
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+
+.contenedor {
+  max-width: 1200px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 4.8rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 3.2rem;
+}
+
+h4 {
+  font-size: 2.8rem;
+}
+
+img {
+  width: 100%;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+/* Header */
+
+.site-header {
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60rem;
+}
+
+.texto-header {
+  color: #ffffff;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+.site-header a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.site-header h1 {
+  text-align: center;
+}
+
+.navegacion a {
+  display: block;
+  text-align: center;
+
+}
+
+@media (min-width: 768px) {
+  .navegacion a {
+    display: inline;
+    margin-right: 2rem;
+  }
+
+  .navegacion a:last-of-type {
+    margin-right: 0;
+  }
+
+}
+
+.texto-header {
+  margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+  .texto-header {
+    margin-top: 15rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenido-principal {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 4rem;
+  }
+
+}
+
+
+.boton {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 1rem 3rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  /*Negrita*/
+}
+
+.boton-primario{
+  background-color: #000000;
+}
+
+.boton-secundario{
+  background-color: #784d3c;
+}
+
+@media (min-width: 768px) {
+  .boton {
+    display: inline-block;
+  }
+
+}
+
+
+
+.entrada {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+  border-bottom: 0;
+}
+
+.curso{
+  list-style: none;
+  border-bottom: 1px solid #e1e1e1;
+  padding: 2rem 0;
+}
+
+.curso:last-of-type{
+  border:none;
+}
+
+
+.site-footer{
+  background-color: #000000;
+  padding: 3rem 0;
+}
+
+.site-footer a{
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+/*Nosotros*/ 
+
+@media (min-width: 768px){
+
+.sobre-nosotros{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+}
+
+/* Cursos */
+
+.curso-detalle{
+  padding: 3rem 0;
+  border-bottom: 1px solid #e1e1e1 ;
+}
+
+.curso-detalle:last-of-type{
+  border:none;
+}
+
+@media (min-width: 768px){
+  .curso-detalle{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+  }
+
+  
+}
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f7f7f7;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.campo {
+  margin-bottom: 2rem;
+}
+
+.campo label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.campo input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 0.25rem;
+}
+
+.alinear-derecha {
+  text-align: right;
+}
+
+.boton-google {
+  background-color: #4285f4;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.25rem;
+}
+
+.icono-google {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+
+.logo {
+  width: 100px; /* ancho del logo */
+  height: 100px; /* alto del logo */
+  margin: 20px; /* margen del logo */
+  float: left; /* posicionar el logo a la izquierda */
+}
